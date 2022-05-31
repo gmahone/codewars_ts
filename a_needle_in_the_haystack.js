@@ -1,3 +1,4 @@
 export function findNeedle(haystack: any[]):string {
-  // Good luck!
+  let haystackIndex = haystack.indexOf("needle");
+  return `found the needle at position ${haystackIndex}`;
 }
