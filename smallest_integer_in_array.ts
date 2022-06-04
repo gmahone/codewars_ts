@@ -5,5 +5,5 @@ export function findSmallestInt(args: number[]): number {
 **/
 
 export function findSmallestInt(args: number[]): number {
-  return Math.min(args);
+  return Math.min(...args);
 }
