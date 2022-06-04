@@ -7,3 +7,8 @@ export function findSmallestInt(args: number[]): number {
 export function findSmallestInt(args: number[]): number {
   return Math.min(...args);
 }
+
+// other solutions
+
+// arrow function version
+export const findSmallestInt = (args: number[]): number => Math.min(...args);
