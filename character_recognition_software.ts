@@ -11,3 +11,6 @@ export function correct(s: string): string{
 export function correct(s: string): string{
   return s.replace(/1/g, 'I').replace(/5/g, 'S').replace(/0/g, 'O')
 }
+
+// arrow function version
+export const correct = (s: string) => s.replace(/1/g, 'I').replace(/5/g, 'S').replace(/0/g, 'O');
