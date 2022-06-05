@@ -1,6 +1,6 @@
 export function correct(s: string): string{
-  s.replaceAll("5", "S");
-  s.replaceAll("0", "O");
-  s.replaceAll("1", "I");
+  s.replace(/5/g, "S");
+  s.replace(/0/g, "O");
+  s.replace(/1/g, "I");
   return s;
 }
