@@ -1,3 +1,3 @@
 export function hexToDec(hexString:string):number{
-  //your code here
+  return String(parseInt(hexString, 16));
 }
