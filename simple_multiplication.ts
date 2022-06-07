@@ -2,6 +2,8 @@ export function simpleMultiplication(num: number): number{
   return num & 1 ? num * 9 : num * 8;
 }
 
+export const simpleMultiplication = (num: number): number => num & 1 ? num * 9 : num * 8;
+
 // other solutions
 
 // arrow function with ternary multiplication
