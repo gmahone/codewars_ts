@@ -1,3 +1,3 @@
 export function simpleMultiplication(num: number): number{
-  return 0;
+  return num & 1 ? num * 9 : num * 8;
 }
