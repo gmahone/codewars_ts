@@ -5,3 +5,8 @@ export const centuryFromYear = (year: number): number => {
     }
     return result;
 };
+
+// easier solution using Math.ceil
+export const centuryFromYear = (year: number): number => {
+  return Math.ceil(year / 100);
+};
