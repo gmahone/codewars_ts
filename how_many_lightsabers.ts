@@ -1,4 +1,4 @@
 export function howManyLightsabersDoYouOwn(name?: any): number {
-    // So, how many?
+    return name === "Zach" ? 18 : 0;
 }
 
