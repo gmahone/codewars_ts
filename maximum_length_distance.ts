@@ -1,7 +1,7 @@
 // fairly complex solution
 export class G964 {
   
-    public static mxdiflg = (a1, a2) => {
+    public static mxdiflg = (a1: Array<string>, a2: Array<string>) => {
       let result = -1;
       let a1Lengths = a1.map(a => a.length);
       let a2Lengths = a2.map(a => a.length);
@@ -20,7 +20,7 @@ export class G964 {
 // double loop solution i was trying to avoid
 export class G964 {
   
-    public static mxdiflg = (a1, a2) => {
+    public static mxdiflg = (a1: Array<string>, a2: Array<string>) => {
         let max = -1;
         for (let x of a1) {
           for (let y of a2) {
@@ -33,10 +33,24 @@ export class G964 {
 
 // cleaner double math solution
 export class G964 {
-  public static mxdiflg = (a1, a2) => {
+  public static mxdiflg = (a1: Array<string>, a2: Array<string>) => {
     if (!a1.length || !a2.length) return -1;
     const x = Math.max(...a1.map(v => v.length)) - Math.min(...a2.map(v => v.length));
     const y = Math.max(...a2.map(v => v.length)) - Math.min(...a1.map(v => v.length));
     return x > y ? x : y;
   }
+}
+
+
+// nested forEach calls
+export class G964 {
+    public static mxdiflg = (a1: Array<string>, a2: Array<string>) => {
+        let max: number = -1;
+        a1.forEach(a => a2.forEach(b => {
+            if(Math.abs(a.length - b.length) > max) {
+                max = Math.abs(a.length - b.length);
+            }
+        }));
+        return max;
+    }
 }
