@@ -14,3 +14,19 @@ export class G964 {
       return result;
     }
 }
+
+// other solutions
+
+// double loop solution i was trying to avoid
+export class G964 {
+  
+    public static mxdiflg = (a1, a2) => {
+        let max = -1;
+        for (let x of a1) {
+          for (let y of a2) {
+            max = Math.max(Math.abs(x.length - y.length), max);
+          }
+        }
+        return max;
+    }
+}
