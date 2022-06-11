@@ -1,8 +1,8 @@
 export class XOR {
     public static xor(a:boolean, b:boolean):boolean {
-        let result = false;
+        let result = true;
         if((a && b) || (!a && !b)){
-            result = true;
+            result = false;
         }
         return result;
     }
