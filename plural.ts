@@ -1,3 +1,3 @@
 export function plural(n:number):boolean {
-  return n > 0;
+  return n === 1;
 }
