@@ -1,3 +1,3 @@
 export function isPalindrome(line: string): boolean {
-  //Am I a palindrome?
+  return line === line.split("").reverse().join("")
 }
