@@ -1,3 +1,3 @@
 export const getEvenNumbers = (numbersArray : number[]) : number[] => {
-  // filter out the odd numbers
+  return numbersArray.filter(a => !(a & 1))
 }
