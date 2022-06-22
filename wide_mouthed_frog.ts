@@ -1,3 +1,3 @@
 export function mouthSize(animal: string): string {
-  return '';
+  return animal.toLowerCase() === "alligator" ? "small" : "wide";
 }
