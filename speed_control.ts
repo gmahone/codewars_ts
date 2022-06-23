@@ -1,10 +1,12 @@
 export class G964 {
 
     public static gps = (s, x) => {
-        speedArray = [];
+        let speedArray = [];
+        let currSpeed;
         for(let i = 1; i < x.length; i++){
-            speedArray.push(3600 * (x[i] - x[i-1]) / s);
+            currSpeed = 3600 * (x[i] - x[i-1]) / s;
+            speedArray.push(Math.floor(currSpeed));
         }
-        return speedArray;
+        return Math.max(...speedArray);
     }  
 }
