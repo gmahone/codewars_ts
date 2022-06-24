@@ -44,3 +44,29 @@ export function rps(p1: string, p2: string): string{
     return 'Player 2 won!'
   } 
 }
+
+
+// add OOP solution
+interface Game{
+  rock : string;
+  paper : string;
+  scissors : string;
+}
+export function rps(p1: string, p2: string): string{
+  let game = {
+    rock : {beats : 'scissors'},
+    paper : {beats : 'rock'},
+    scissors : {beats : 'paper'}
+  };
+  if(p1 === p2){
+    return 'Draw!';
+  }
+  let message = (n:string)=> `Player ${n} won!`;
+  if(game[p1 as keyof Game].beats === p2){
+    return message('1');
+  }
+  if(game[p2 as keyof Game].beats === p1){
+    return message('2');
+  }
+  return ''
+}
