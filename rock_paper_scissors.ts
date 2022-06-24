@@ -70,3 +70,23 @@ export function rps(p1: string, p2: string): string{
   }
   return ''
 }
+
+
+// solution using a Map
+export function rps(p1: string, p2: string): string{
+  const winMap : any = {
+    'rock' : 'scissors',
+    'scissors' : 'paper',
+    'paper' : 'rock'
+  }
+  
+  if (winMap[p1] == p2) {
+    return 'Player 1 won!'
+  }
+  
+  if (winMap[p2] == p1) {
+    return 'Player 2 won!'
+  }
+  
+  return 'Draw!'
+}
