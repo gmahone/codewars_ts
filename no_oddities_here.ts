@@ -1,3 +1,3 @@
 export function noOdds(values: number[]): number[] {
-  // Return all non-odd values
+  return values.filter(e => e % 2 === 0)
 }
