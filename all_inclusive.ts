@@ -4,7 +4,6 @@ export function containAllRots(str: string, arr: string[]): boolean {
     return result;
   }
   for(let i: number = 0; i < arr.length; i++){
-    console.log(str)
     if(!arr.includes(str)){
       return false;
     }
