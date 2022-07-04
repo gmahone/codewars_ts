@@ -1,3 +1,3 @@
 export function disariumNumber(n: number) {
-  // your code here
+  return n.reduce((acc,c,i) => acc + c**(i+1), 0) === n ? "Disarium !!" : "Not !!";
 }
