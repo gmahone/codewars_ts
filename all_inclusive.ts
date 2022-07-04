@@ -3,7 +3,7 @@ export function containAllRots(str: string, arr: string[]): boolean {
   if(str === ""){
     return result;
   }
-  for(let i: number = 0; i < arr.length; i++){
+  for(let i: number = 0; i < arr.length + 1; i++){
     if(!arr.includes(str)){
       return false;
     }
