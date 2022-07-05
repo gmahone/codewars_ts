@@ -1,4 +1,4 @@
 export function findAverage(array: number[]): number {
-  // your code here
-  return 0;
+  let result: number = array.reduce((acc,c) => acc + c, 0) / array.length;
+  return result;
 }
