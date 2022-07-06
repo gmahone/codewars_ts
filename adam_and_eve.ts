@@ -34,5 +34,19 @@ export class God {
   }
 }
 
+// classes with names property
+interface IHuman {
+  name: string;
+}
+export class Human implements IHuman {
+  constructor(public name: string) {}
+}
+export class Man extends Human {}
+export class Woman extends Human {}
 
+export class God {
+  static create() {
+    return [new Man('Adam'), new Woman('Eve')];
+  }
+}
 
