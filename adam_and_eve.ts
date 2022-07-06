@@ -10,3 +10,7 @@ export class God{
 export class Human{
   // placeholder
 }
+
+export class Man extends Human{
+  // placeholder
+}
