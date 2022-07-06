@@ -50,3 +50,13 @@ export class God {
   }
 }
 
+// solution with strict typing in create()
+export class God{
+    static create() : Array<Man | Woman>{
+      return [new Man(), new Woman()]
+    }
+  }
+
+export abstract class Human{}
+export class Man extends Human{}
+export class Woman extends Human{}
