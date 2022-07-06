@@ -14,3 +14,7 @@ export class Human{
 export class Man extends Human{
   // placeholder
 }
+
+export class Woman extends Human{
+  // placeholder
+}
