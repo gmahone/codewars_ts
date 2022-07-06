@@ -3,7 +3,7 @@ export class God{
  * @returns Human[]
  */
   static create(){
-    // code
+    return [new Man, new Woman];
   }
 }
 
