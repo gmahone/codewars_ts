@@ -8,13 +8,17 @@ export class God{
 }
 
 export class Human{
-  // placeholder
+  name: string;
+ 
+  constructor(name: string) {
+    this.name = name;
+  }
 }
 
 export class Man extends Human{
-  // placeholder
+  this.name = "Adam";
 }
 
 export class Woman extends Human{
-  // placeholder
+  this.name = "Eve";
 }
