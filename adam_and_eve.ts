@@ -6,4 +6,7 @@ export class God{
     // code
   }
 }
-// code
+
+export class Human{
+  // placeholder
+}
