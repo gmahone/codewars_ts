@@ -1,3 +1,3 @@
 export function factorial(n: number) {
-  // your code here
+  return n > 1 ? n * factorial(n - 1) : 1;
 }
