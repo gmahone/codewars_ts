@@ -1,3 +1,3 @@
 export function maxTriSum(nums: number[]): number  {
-  // your code here
+  return nums.sort((a,z) => z - a).splice(0,3).reduce((acc,c) => acc + c, 0);
 }
