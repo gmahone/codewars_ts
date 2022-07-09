@@ -1,3 +1,3 @@
 export function repeater(str: string, n: number): string {
-  return ""; // your code here
+  return new Array(n).fill(str);
 }
