@@ -1,4 +1,4 @@
 export function repeater(str: string, n: number): string {
-  let result: string[] =  new Array(n: number).fill(str: string);
+  var result:string =  new Array(n).fill(str).join("");
   return result;
 }
