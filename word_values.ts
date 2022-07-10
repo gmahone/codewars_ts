@@ -3,5 +3,5 @@ export function wordCalc(str: string): number {
 }
 
 export function wordValue(arr: string[]): number[] {
-  return "";
+  return arr.map(a => wordCalc(a));
 }
