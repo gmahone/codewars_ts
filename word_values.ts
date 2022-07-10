@@ -9,3 +9,10 @@ export function wordCalc(str: string): number {
 export function wordValue(arr: string[]): number[] {
   return arr.map((a,i) => wordCalc(a)*(i+1));
 }
+
+
+// solution using prebuilt index array
+export function wordValue(arr: string[]): number[] {
+  const w : string = " abcdefghijklmnopqrstuvwxyz"
+  return arr.map((x, i) => x.split("").reduce((sum, y) => sum + w.indexOf(y) , 0) * (i + 1))
+}
