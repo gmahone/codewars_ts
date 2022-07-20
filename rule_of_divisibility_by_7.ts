@@ -1,7 +1,7 @@
 export function seven(m: number): number[]{
-  let i = 0;
-  let strArray;
-  let strArrayEnd;
+  let i: number = 0;
+  let strArray: string[];
+  let strArrayEnd: any;
   while(m >= 100){
     strArray = String(m).split("");
     strArrayEnd = strArray.pop();
