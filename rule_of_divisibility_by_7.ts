@@ -10,3 +10,10 @@ export function seven(m: number): number[]{
   }
   return [m, i];
 }
+
+
+// recursive solution version
+export function seven(num: number, steps = 0): number[] {
+  if (num < 100) return [num, steps];
+  return seven(Math.trunc(num / 10) - 2 * (num % 10), steps++);
+}
