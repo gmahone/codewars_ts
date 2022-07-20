@@ -17,3 +17,14 @@ export function seven(num: number, steps = 0): number[] {
   if (num < 100) return [num, steps];
   return seven(Math.trunc(num / 10) - 2 * (num % 10), steps++);
 }
+
+
+// no string solution
+export function seven(m: number): number[] {
+   let count: number = 0
+   while(m >= 100){
+     m = Math.floor(m / 10) - 2 * (m % 10)
+     count++
+   }
+   return [m, count]   
+}
