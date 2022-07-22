@@ -1,3 +1,4 @@
 export function parseF(s:string): number|null {
-  return parseFloat(s);
+  let result: number | NaN = parseFloat(s);
+  return result == NaN ? null : result;
 }
