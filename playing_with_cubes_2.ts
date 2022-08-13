@@ -2,7 +2,7 @@ export class Cube {
   
   private _side: number;
   
-  constructor(side: string) {
+  constructor(side: number) {
     this._side = side;
   }
 
