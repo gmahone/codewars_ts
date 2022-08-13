@@ -3,7 +3,7 @@ export class Cube {
   private _side: number;
   
   constructor(side: number = 0) {
-    this._side = side;
+    this._side = Math.abs(side);
   }
 
   public getSide(): number {
