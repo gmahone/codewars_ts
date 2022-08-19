@@ -7,3 +7,6 @@ export const factorial = (n: number): number => {
 
 
 // solution with ternary
+export const factorial = (n: number): number => {
+  return n<=1 ? 1 : n * factorial(n-1);
+};
