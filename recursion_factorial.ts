@@ -4,3 +4,6 @@ export const factorial = (n: number): number => {
   }
   else return 1;
 };
+
+
+// solution with ternary
