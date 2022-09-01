@@ -5,3 +5,7 @@ export const head =()=>{
 export const tail =()=>{
   throw new Error('Todo, as well as the other functions...')
 }
+
+export const init =()=>{
+  throw new Error('Todo, as well as the other functions...')
+}
