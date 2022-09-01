@@ -7,9 +7,9 @@ export const tail =(arr)=>{
 }
 
 export const init =(arr)=>{
-  return arr.slice(0,arr.length); 
+  return arr.slice(0,arr.length-1); 
 }
 
-export const last =()=>{
-  throw new Error('Todo, as well as the other functions...')
+export const last =(arr)=>{
+  return arr.slice(arr.length-1);
 }
