@@ -12,3 +12,9 @@ export function bigToSmall(arr: number[][]): string {
 export function bigToSmall(arr: number[][]): string {
   return arr.flat().sort((a, b) => b - a).join('>')
 }
+
+
+// short solution similar to mine
+export function bigToSmall(arr: any[]): string {
+  return [].concat(...arr).sort((a, b) => b - a).join('>');
+}
