@@ -4,6 +4,5 @@ export function bigToSmall(arr: number[][]): string {
     result = result.concat(arr[i]);
   }
   result.sort((a,z) => z - a);
-  console.log(result);
   return "";
 }
