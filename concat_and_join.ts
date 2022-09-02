@@ -1,3 +1,6 @@
 export function bigToSmall(arr: number[][]): string {  
-  // Your code here
+  let result = [];
+  for(let i = 0; i < arr.length, i++){
+    result = result.concat(arr[i]);
+  }
 }
