@@ -10,6 +10,9 @@ export function isPrime(p:number): boolean {
 export function step(g:number, m:number, n:number): [number,number]|null {
   let primeMap = new Map<number, number>();
   for(let i: number = m; i < n+1; i++){
+    if(i % 2 == 0){
+      continue;
+    }
     if(isPrime(i)){
       primeMap.set(i, i - g);
       if(primeMap.has(i - g)){
