@@ -1,5 +1,5 @@
 export function isPrime(p:number): boolean {
-  for(let i: number = 2; i < p; i++){
+  for(let i: number = 2; i < Math.ceil(p/2); i++){
     if(p % i == 0){
       return false;
     }
