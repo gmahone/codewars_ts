@@ -19,7 +19,7 @@ export function step(g:number, m:number, n:number): [number,number]|null {
     if(isPrime(i)){
       primeMap.set(i, i - g);
       if(primeMap.has(i - g)){
-        return(i - g, i]);
+        return([i - g, i]);
       }
     }
   }
