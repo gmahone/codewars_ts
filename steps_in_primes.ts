@@ -12,10 +12,13 @@ export function step(g:number, m:number, n:number): [number,number]|null {
   for(let i: number = m; i < n+1; i++){
     if(isPrime(i)){
       primeMap.set(i, i - g);
+      console.log(i, primeMap.get(i))
       if(primeMap.has(i - g)){
-        return([primeMap[i], i]);
+        console.log(primeMap.get(i), i)
+        return(i - g, i]);
       }
     }
   }
   return null
 }
+
