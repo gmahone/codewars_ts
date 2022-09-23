@@ -9,3 +9,22 @@ export function mean(lst: string[]): [number, string] {
   let listConcat: string = listString.join("")
   return [listMean, listConcat];
 }
+
+
+
+// for loop solution
+export function mean(lst: string[]): [number, string] {
+  let sum: number = 0;
+  let count: number = 0;
+  let str: string = "";
+  for (let ch of lst) {
+    if (ch >= '0' && ch <= '9') {
+      sum += +ch;
+      count += 1;
+    }
+    else {
+      str += ch;
+    }
+  }
+  return [sum / count, str];
+}
