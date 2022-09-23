@@ -1,5 +1,5 @@
 export function notNumber(x: string): boolean {
-  return !(Number(x))
+  return !(Number(x)) && x != "0"
 }
 
 export function mean(lst: string[]): [number, string] {
@@ -7,6 +7,7 @@ export function mean(lst: string[]): [number, string] {
   let listMean: number = listNum.reduce((acc,c) => acc + Number(c)) / 10;
   console.log(listMean);
   let listString: string[] = lst.filter(notNumber);
+  let listConcat: string = listString.join("")
   console.log(listConcat);
-  return [10, "A"];
+  return [listMean, listConcat];
 }
