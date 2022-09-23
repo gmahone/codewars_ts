@@ -5,9 +5,7 @@ export function notNumber(x: string): boolean {
 export function mean(lst: string[]): [number, string] {
   let listNum: number[] = lst.filter(Number).map(a => +a);
   let listMean: number = listNum.reduce((acc,c) => acc + Number(c)) / 10;
-  console.log(listMean);
   let listString: string[] = lst.filter(notNumber);
   let listConcat: string = listString.join("")
-  console.log(listConcat);
   return [listMean, listConcat];
 }
