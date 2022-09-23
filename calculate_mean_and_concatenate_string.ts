@@ -13,7 +13,7 @@ export function mean(lst: string[]): [number, string] {
 
 
 // for loop solution
-export function mean(lst: string[]): [number, string] {
+export function mean(lst: string[]): [number, string] { //output was : any
   let sum: number = 0;
   let count: number = 0;
   let str: string = "";
@@ -27,4 +27,15 @@ export function mean(lst: string[]): [number, string] {
     }
   }
   return [sum / count, str];
+}
+
+
+// using isFinite
+export function mean(lst: string[]): [number, string] {
+  let numbers: number[] = []; //any[]
+  let strings: string[] = []; //any[]
+  lst.forEach((it: any) => {
+    Number.isFinite(+it) ? numbers.push(+it) : strings.push(it);
+  });
+  return [numbers.reduce((n1, n2) => n1 + n2) / numbers.length, strings.join("")];
 }
