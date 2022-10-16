@@ -10,3 +10,7 @@ export function sortMe (names: string[]): string[] {
   });
   return(result);
 }
+
+
+// small version
+export const sortMe = (names: string[]): string[] => names.sort();
