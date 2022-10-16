@@ -1,3 +1,4 @@
 export function sortMe (names: string[]): string[] {
-  return "";
+  const result = names.sort((a,z) => a - z);
+  return(result);
 }
